@@ -12,3 +12,5 @@ For example,
 ```
 python video_to_img.py ROP_1.avi get_homography_manual
 ```
+The result of the Mosaic using the manually labeled feature points to calculate the homography matrix is as follows:
+![img](https://github.com/ymmzs/Video_Stitch/tree/master/Mosaic_result/frame_1_mosaic_50_manual.jpg)

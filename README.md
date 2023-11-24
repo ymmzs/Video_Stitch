@@ -10,5 +10,5 @@ The 'homography_type' parameter has three options: 'get_homography_manual', 'get
 
 For example,
 ```
-python video_to_img.py video/ROP_1.avi get_homography_manual
+python video_to_img.py ROP_1.avi get_homography_manual
 ```

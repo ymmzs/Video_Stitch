@@ -1,0 +1,38 @@
+manual_params:
+#  gt_path:
+
+
+superRetina_params:
+  nms_radius: 10
+  max_keypoints: 1024
+  keypoint_threshold: 0.01
+  remove_borders: 4
+  image_height: 768
+  image_width: 768
+  image_orig_height: 1200
+  image_orig_width: 1200
+  feat_model_path: 'model/weight/SuperRetina.pth'
+
+train_params:
+  batch_size: 1
+  num_epochs: 200
+  seed: 20
+  attention_layers: 5
+  sinkhorn_iterations: 50
+  match_threshold: 0.2
+  learning_rate: 0.0001
+  mat_model_path: 'model/weight/Superglue_kpt.pth'
+  # model_path: 'model/weight/Superglue_fourier.pth'
+
+dataset_params:
+  train_path: '/home/yaomm/Data/FIRE_Dataset/DATASET_622/TRAIN/'
+  val_path: '/home/yaomm/Data/FIRE_Dataset/DATASET_622/VAL/'
+  test_path: '/home/yaomm/Data/FIRE_Dataset/DATASET_622/TEST/'
+#  test_path: '/home/yaomm/Data/FIRE_Dataset/DATASET_622/Images/'
+  homo_matrix_path: '/home/yaomm/Data/FIRE_Dataset/Ground_Truth'
+  apply_color_aug: true    # whether to apply photometric distortions
+  image_height: 768
+  image_width: 768
+  image_orig_height: 2912
+  image_orig_width: 2912
+  use_matching_trick: True
